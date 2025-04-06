@@ -1,0 +1,8 @@
+openai
+chromadb
+flask
+streamlit
+python-dotenv
+langchain
+PyMuPDF
+python-docx
