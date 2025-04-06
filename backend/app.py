@@ -3,7 +3,7 @@ load_dotenv()  # Load environment variables from .env file
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # Enable cross-origin requests
-from backend.qa_engine import ask_question  # Import question answering function
+from backend.qa_engine import ask_question  # Use absolute import
 
 import os
 print("OpenAI API Key:", os.getenv("OPENAI_API_KEY"))  # Debug: Ensure API key is loaded

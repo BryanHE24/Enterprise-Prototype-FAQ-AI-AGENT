@@ -1,7 +1,8 @@
-import chromadb
-from langchain.vectorstores import Chroma
-from langchain.embeddings import OpenAIEmbeddings
 from backend.document_loader import load_documents
+import chromadb
+from langchain_community.vectorstores import Chroma
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.document_loaders import TextLoader, PyMuPDFLoader, Docx2txtLoader
 
 DB_DIR = "db"
 DATA_DIR = "data"
