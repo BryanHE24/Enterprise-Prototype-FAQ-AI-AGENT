@@ -6,6 +6,7 @@ from backend.document_loader import load_documents
 DB_DIR = "db"
 DATA_DIR = "data"
 
+# Load documents, embed them, and store in Chroma DB
 def get_vector_store():
     documents = load_documents(DATA_DIR)
     embeddings = OpenAIEmbeddings()
